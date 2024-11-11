@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    Spotify playlist improvement
+    <script type="text/javascript">
+        function changeImage(a) {
+            console.log("Its working");
+            document.getElementById("linas").src=a;
+        }
+    </script>
+    <script type="text/javascript">
+        function getJson(){
+            fetch('https://jsonplaceholder.typicode.com/todos')
+                .then(response => response.json())
+                .then(bluudd => console.log(bluudd))
+        }
+    </script>
+</head>
+<body>
+<h3>
+    This is website dedicated to improving spotify's recommended playlist
+</h3>
+<p>
+    <blockquote>
+        <p>
+            This is a paragraph. I want it to be formated correctly. we'll see if I'm lucky. we'll see if I'm lucky <br>
+            This is a paragraph. I want it to be formated correctly. we'll see if I'm lucky. we'll see if I'm lucky <br>
+            This is a paragraph. I want it to be formated correctly. we'll see if I'm lucky. we'll see if I'm lucky <br>
+            This is a paragraph. I want it to be formated correctly. we'll see if I'm lucky. we'll see if I'm lucky <br>
+            This is a paragraph. I want it to be formated correctly. we'll see if I'm lucky. we'll see if I'm lucky <br>
+            This is a paragraph. I want it to be formated correctly. we'll see if I'm lucky. we'll see if I'm lucky <br>
+        </p>
+    </blockquote> 
+    
+    This is a picture
+    <img id="linas" src="resources/Linas.png" alt="Lina" onclick='changeImage("resources/Space.jpg")' ;>
+    <img id="linas" src="resources/Linas.png" alt="Lina" onclick='getJson()';>
+</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
